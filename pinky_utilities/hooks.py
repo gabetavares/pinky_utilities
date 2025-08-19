@@ -30,6 +30,7 @@ app_license = "mit"
 app_include_js = [
   "/assets/pinky_utilities/js/dom/load_script.js",
   "/assets/pinky_utilities/js/phone/phone_mask.js",
+  "/assets/pinky_utilities/js/item/item_code.js",
 ]
 
 # include js, css files in header of web template
@@ -52,7 +53,8 @@ app_include_js = [
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
 doctype_js = {
-  "Address" : "public/js/doctype/Address.js"
+  "Address" : ["public/js/doctype/Address/format_phone.js"],
+  "Item" : ["public/js/doctype/Item/format_item_code.js"],
 }
 
 # Svg Icons
