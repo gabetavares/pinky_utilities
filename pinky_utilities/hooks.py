@@ -26,7 +26,11 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/pinky_utilities/css/pinky_utilities.css"
-# app_include_js = "/assets/pinky_utilities/js/pinky_utilities.js"
+
+app_include_js = [
+  "/assets/pinky_utilities/js/dom/load_script.js",
+  "/assets/pinky_utilities/js/phone/phone_mask.js",
+]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/pinky_utilities/css/pinky_utilities.css"
@@ -43,10 +47,13 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+
+doctype_js = {
+  "Address" : "public/js/doctype/Address.js"
+}
 
 # Svg Icons
 # ------------------
