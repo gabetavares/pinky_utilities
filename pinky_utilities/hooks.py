@@ -29,8 +29,10 @@ app_license = "mit"
 # app_include_css = "/assets/pinky_utilities/css/pinky_utilities.css"
 
 app_include_js = [
+  "helpers.pinky.bundle.js",
   "item.pinky.bundle.js",
   "input_mask.pinky.bundle.js",
+  "service.pinky.bundle.js",
 ]
 
 # include js, css files in header of web template
@@ -53,7 +55,11 @@ app_include_js = [
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
 doctype_js = {
-  "Address" : ["public/js/doctype/Address/phone_mask.js"],
+  "Address" : [
+    "public/js/doctype/Address/phone_mask.js",
+    "public/js/doctype/Address/cep_mask.js",
+    "public/js/doctype/Address/fetch_cep.js",
+    ],
   "Item" : ["public/js/doctype/Item/format_item_code.js"],
 }
 
