@@ -59,7 +59,7 @@ doctype_js = {
     "public/js/doctype/Address/phone_mask.js",
     "public/js/doctype/Address/cep_mask.js",
     "public/js/doctype/Address/fetch_cep.js",
-    ],
+  ],
   "Item" : ["public/js/doctype/Item/format_item_code.js"],
 }
 
