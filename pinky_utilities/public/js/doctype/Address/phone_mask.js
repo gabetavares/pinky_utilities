@@ -1,14 +1,11 @@
-const PhoneMask = Pinky.Mask.PhoneMask;
-const PhoneInputField = Pinky.Mask.PhoneInputField;
-
-const masks = {
-  phone: new PhoneMask(PhoneMask.config()),
-  fax: new PhoneMask(PhoneMask.config()),
+const address_phone_masks = {
+  phone: new Pinky.Mask.PhoneMask(Pinky.Mask.PhoneMask.config()),
+  fax: new Pinky.Mask.PhoneMask(Pinky.Mask.PhoneMask.config()),
 };
 
 frappe.ui.form.on('Address', {
   refresh(frm) {
-    PhoneInputField.create_input_events(frm, masks.phone, 'phone');
-    PhoneInputField.create_input_events(frm, masks.fax, 'fax');
+    Pinky.Mask.PhoneInputField.create_input_events(frm, address_phone_masks.phone, 'phone');
+    Pinky.Mask.PhoneInputField.create_input_events(frm, address_phone_masks.fax, 'fax');
   }
 })
