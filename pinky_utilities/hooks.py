@@ -25,11 +25,12 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
+# app_include_js = "/assets/pinky_utilities/js/pinky_utilities.js"
 # app_include_css = "/assets/pinky_utilities/css/pinky_utilities.css"
 
 app_include_js = [
-  "https://unpkg.com/imask@7.6.1/dist/imask.js",
-  "/assets/pinky_utilities/js/item/format_item_code.js",
+  "item.pinky.bundle.js",
+  "input_mask.pinky.bundle.js",
 ]
 
 # include js, css files in header of web template
@@ -52,6 +53,7 @@ app_include_js = [
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
 doctype_js = {
+  "Address" : ["public/js/doctype/Address/phone_mask.js"],
   "Item" : ["public/js/doctype/Item/format_item_code.js"],
 }
 

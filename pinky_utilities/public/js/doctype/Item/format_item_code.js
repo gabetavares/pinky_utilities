@@ -1,9 +1,10 @@
+const format_item_code = Pinky.Item.format_item_code;
+
 frappe.ui.form.on('Item', {
   refresh: function (frm) {
     const input = frm.fields_dict.item_code.$input;
 
     input.on("input", (e) => {
-      console.log(`code`, format_item_code(e.target.value));
       e.target.value = format_item_code(e.target.value);
       frm.set_value('item_code', e.target.value);
     });

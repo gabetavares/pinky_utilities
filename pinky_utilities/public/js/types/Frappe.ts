@@ -1,0 +1,1 @@
+export type FrappeForm = Record<string, any>

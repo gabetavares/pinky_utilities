@@ -1,4 +1,4 @@
-function format_item_code(item_code) {
+export function format_item_code(item_code: string) {
   return (item_code || '')
     .toString()
     .replace(/^[-_\s]+/, '')
