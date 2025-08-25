@@ -55,12 +55,18 @@ app_include_js = [
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
 doctype_js = {
+  "Customer" : [
+    "public/js/doctype/Customer/tax_id_mask.js",
+    "public/js/doctype/Customer/fetch_cnpj.js",
+  ],
   "Address" : [
     "public/js/doctype/Address/phone_mask.js",
     "public/js/doctype/Address/cep_mask.js",
     "public/js/doctype/Address/fetch_cep.js",
   ],
-  "Item" : ["public/js/doctype/Item/format_item_code.js"],
+  "Item" : [
+    "public/js/doctype/Item/format_item_code.js"
+  ],
 }
 
 # Svg Icons

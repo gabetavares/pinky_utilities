@@ -33,4 +33,12 @@ export default abstract class BaseMask {
     this.update(value);
     return this.mask;
   }
+
+  public reload(config: Record<string, unknown>): any {
+    if (this.mask !== null)
+      this._destroy();
+
+    this._mask_config = config;
+    return this.mask;
+  }
 }
