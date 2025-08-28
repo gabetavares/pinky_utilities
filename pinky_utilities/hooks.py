@@ -52,6 +52,7 @@ app_include_js = [
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
 doctype_js = {
+  "Supplier" : "public/js/doctype/Supplier.js",
   "Customer" : "public/js/doctype/Customer.js",
   "Address" : "public/js/doctype/Address.js",
   "Item" : "public/js/doctype/Item.js",
