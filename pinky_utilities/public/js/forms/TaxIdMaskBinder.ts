@@ -1,5 +1,3 @@
-import "imask";
-
 import TaxIdMask from "../input_mask/TaxIdMask";
 import { Frappe } from "../types/Frappe";
 import { FormEventInterface } from "../types/frappe_forms/FormsApi";

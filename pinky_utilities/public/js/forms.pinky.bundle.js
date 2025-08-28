@@ -1,3 +1,5 @@
+import "imask";
+
 import { default as FetchCompanyBinder } from "./forms/FetchCompanyBinder";
 import { default as FetchPostalCodeBinder } from "./forms/FetchPostalCodeBinder";
 import { default as ItemCodeBinder } from "./forms/ItemCodeBinder";
