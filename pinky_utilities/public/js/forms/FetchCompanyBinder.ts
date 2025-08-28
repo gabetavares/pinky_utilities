@@ -2,7 +2,8 @@ import FetchCompanyException from "../exception/FetchCompanyException";
 import Company from "../helpers/Company";
 import CnpjService from "../services/CnpjService";
 import { Frappe, FrappeForm } from "../types/Frappe";
-import { FetchCompanyBinderFields, FetchCompanyBinderOptions, FormEventInterface } from "../types/frappe/FormsApi";
+import { FetchCompanyBinderFields, FetchCompanyBinderOptions } from "../types/frappe_forms/FetchCompanyBinderTypes";
+import { FormEventInterface } from "../types/frappe_forms/FormsApi";
 import FrappeFormEvent from "./FrappeFormEvent";
 
 export default class FetchCompanyBinder extends FrappeFormEvent implements FormEventInterface {

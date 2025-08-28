@@ -2,7 +2,8 @@ import "imask";
 
 import TaxIdMask from "../input_mask/TaxIdMask";
 import { Frappe } from "../types/Frappe";
-import { FormEventInterface, TaxIdMaskBinderFields, TaxIdMaskBinderOptions } from "../types/frappe/FormsApi";
+import { FormEventInterface } from "../types/frappe_forms/FormsApi";
+import { TaxIdMaskBinderFields, TaxIdMaskBinderOptions } from "../types/frappe_forms/TaxIdMaskBinderTypes";
 import FrappeFormEvent from "./FrappeFormEvent";
 
 export default class TaxIdMaskBinder extends FrappeFormEvent implements FormEventInterface {

@@ -1,6 +1,7 @@
 import CepMask from "../input_mask/CepMask";
 import { Frappe } from "../types/Frappe";
-import { FormEventInterface, PostalCodeMaskBinderFields, PostalCodeMaskBinderOptions } from "../types/frappe/FormsApi";
+import { FormEventInterface } from "../types/frappe_forms/FormsApi";
+import { PostalCodeMaskBinderFields, PostalCodeMaskBinderOptions } from "../types/frappe_forms/PostalCodeMaskBinderTypes";
 import FrappeFormEvent from "./FrappeFormEvent";
 
 export default class PostalCodeMaskBinder extends FrappeFormEvent implements FormEventInterface {

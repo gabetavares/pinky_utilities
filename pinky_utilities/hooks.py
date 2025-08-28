@@ -29,10 +29,6 @@ app_license = "mit"
 # app_include_css = "/assets/pinky_utilities/css/pinky_utilities.css"
 
 app_include_js = [
-  "helpers.pinky.bundle.js",
-  "item.pinky.bundle.js",
-  "input_mask.pinky.bundle.js",
-  "service.pinky.bundle.js",
   "forms.pinky.bundle.js",
 ]
 

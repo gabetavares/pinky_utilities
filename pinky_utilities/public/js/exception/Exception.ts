@@ -1,5 +1,5 @@
 import { ExceptionInterface } from "../types/Exception";
-import { FrappeDialogOptions } from "../types/frappe/FormsApi";
+import { FrappeDialogOptions } from "../types/frappe_forms/FormsApi";
 
 export abstract class Exception extends Error {
   public readonly name: string;

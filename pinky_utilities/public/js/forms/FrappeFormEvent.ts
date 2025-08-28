@@ -1,5 +1,5 @@
 import { Frappe } from "../types/Frappe";
-import { FormEventInterface } from "../types/frappe/FormsApi";
+import { FormEventInterface } from "../types/frappe_forms/FormsApi";
 import { GenericFn } from "../types/Utils";
 import FrappeFormApi from "./FrappeFormApi";
 

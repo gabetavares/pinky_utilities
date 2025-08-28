@@ -1,6 +1,7 @@
 import PhoneMask from "../input_mask/PhoneMask";
 import { Frappe, FrappeForm } from "../types/Frappe";
-import { FormEventInterface, PhoneMaskBinderOptions } from "../types/frappe/FormsApi";
+import { FormEventInterface } from "../types/frappe_forms/FormsApi";
+import { PhoneMaskBinderOptions } from "../types/frappe_forms/PhoneMaskBinderTypes";
 import FrappeFormEvent from "./FrappeFormEvent";
 
 export default class PhoneMaskBinder extends FrappeFormEvent implements FormEventInterface {

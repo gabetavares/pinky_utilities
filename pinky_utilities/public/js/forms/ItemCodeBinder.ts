@@ -1,5 +1,6 @@
 import { Frappe } from "../types/Frappe";
-import { FormEventInterface, ItemCodeBinderFields, ItemCodeBinderOptions } from "../types/frappe/FormsApi";
+import { FormEventInterface } from "../types/frappe_forms/FormsApi";
+import { ItemCodeBinderFields, ItemCodeBinderOptions } from "../types/frappe_forms/ItemCodeBinderTypes";
 import FrappeFormEvent from "./FrappeFormEvent";
 
 export default class ItemCodeBinder extends FrappeFormEvent implements FormEventInterface {

@@ -3,7 +3,8 @@ import Cep from "../helpers/Cep";
 import CepService from "../services/CepService";
 import { CepFailResponse, CepSuccessResponse } from "../types/Cep";
 import { Frappe, FrappeForm } from "../types/Frappe";
-import { FetchPostalCodeBinderFields, FetchPostalCodeBinderOptions, FormEventInterface } from "../types/frappe/FormsApi";
+import { FetchPostalCodeBinderFields, FetchPostalCodeBinderOptions } from "../types/frappe_forms/FetchPostalCodeBinderTypes";
+import { FormEventInterface } from "../types/frappe_forms/FormsApi";
 import FrappeFormEvent from "./FrappeFormEvent";
 
 export default class FetchPostalCodeBinder extends FrappeFormEvent implements FormEventInterface {

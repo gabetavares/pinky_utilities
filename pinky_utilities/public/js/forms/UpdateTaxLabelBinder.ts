@@ -1,5 +1,6 @@
 import { Frappe, FrappeForm } from "../types/Frappe";
-import { FormEventInterface, UpdateTaxLabelBinderFields, UpdateTaxLabelBinderOptions } from "../types/frappe/FormsApi";
+import { FormEventInterface } from "../types/frappe_forms/FormsApi";
+import { UpdateTaxLabelBinderFields, UpdateTaxLabelBinderOptions } from "../types/frappe_forms/UpdateTaxLabelBinderTypes";
 import FrappeFormEvent from "./FrappeFormEvent";
 
 export default class UpdateTaxLabelBinder extends FrappeFormEvent implements FormEventInterface {
