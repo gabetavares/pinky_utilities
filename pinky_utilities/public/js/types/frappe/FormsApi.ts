@@ -12,7 +12,6 @@ interface FormBinderOptions {
   formName: string;
 }
 
-
 export interface FetchCompanyBinderFields {
   type: string,
   taxId?: string;
@@ -40,4 +39,31 @@ export interface TaxIdMaskBinderFields {
 
 export interface TaxIdMaskBinderOptions extends FormBinderOptions {
   fieldNames: TaxIdMaskBinderFields
+}
+
+export interface PhoneMaskBinderOptions extends FormBinderOptions {
+  phoneFields: Array<string>
+}
+
+export interface PostalCodeMaskBinderFields {
+  pincode?: string
+}
+
+export interface PostalCodeMaskBinderOptions extends FormBinderOptions {
+  fieldNames?: PostalCodeMaskBinderFields
+}
+
+export interface FetchPostalCodeBinderFields {
+  pincode?: string
+  addressLine1?: string,
+  addressLine2?: string,
+  city?: string,
+  state?: string,
+  country?: string,
+  complement?: string,
+  number?: string,
+}
+
+export interface FetchPostalCodeBinderOptions extends FormBinderOptions {
+  fieldNames?: FetchPostalCodeBinderFields
 }

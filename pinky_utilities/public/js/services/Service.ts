@@ -1,5 +1,5 @@
 import { Exception } from "../exception/Exception";
-import { ServiceResponse } from "../types/Service";
+import { FailServiceResponse, ServiceResponse, SuccessServiceResponse } from "../types/Service";
 
 export abstract class Service {
   protected constructor() { }
@@ -8,7 +8,7 @@ export abstract class Service {
     return data;
   }
 
-  protected _failResponse(error: Exception) {
+  protected _failResponse<T extends Exception>(error: T): FailServiceResponse<T> {
     return this._response({
       success: false,
       payload: {
@@ -19,7 +19,7 @@ export abstract class Service {
     });
   }
 
-  protected _successResponse(data: Record<string, unknown>) {
+  protected _successResponse<T>(data: T): SuccessServiceResponse<T> {
     return this._response({
       success: true,
       payload: data

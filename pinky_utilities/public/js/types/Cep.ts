@@ -1,4 +1,5 @@
-import { ServiceResponse } from "./Service";
+import FetchPostalCodeException from "../exception/FetchPostalCodeException";
+import { FailServiceResponse, SuccessServiceResponse } from "./Service";
 
 export type ViaCepResponse = {
   cep: string,
@@ -29,11 +30,6 @@ export interface CepInterface {
   area_code: string,
 };
 
-export type CepFailResponse = ServiceResponse<{
-  code: string;
-  message: string;
-}>
-
-export type CepSuccessResponse = ServiceResponse<CepInterface>
-
+export type CepFailResponse = FailServiceResponse<FetchPostalCodeException>
+export type CepSuccessResponse = SuccessServiceResponse<CepInterface>
 export type CepResponse = CepFailResponse | CepSuccessResponse;
