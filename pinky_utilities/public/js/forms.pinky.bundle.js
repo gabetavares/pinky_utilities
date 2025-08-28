@@ -1,5 +1,6 @@
 import { default as FetchCompanyBinder } from "./forms/FetchCompanyBinder";
 import { default as FetchPostalCodeBinder } from "./forms/FetchPostalCodeBinder";
+import { default as ItemCodeBinder } from "./forms/ItemCodeBinder";
 import { default as PhoneMaskBinder } from "./forms/PhoneMaskBinder";
 import { default as PostalCodeMaskBinder } from "./forms/PostalCodeMaskBinder";
 import { default as TaxIdMaskBinder } from "./forms/TaxIdMaskBinder";
@@ -12,3 +13,4 @@ Pinky.Forms.FetchCompanyBinder = FetchCompanyBinder;
 Pinky.Forms.PhoneMaskBinder = PhoneMaskBinder;
 Pinky.Forms.PostalCodeMaskBinder = PostalCodeMaskBinder;
 Pinky.Forms.FetchPostalCodeBinder = FetchPostalCodeBinder;
+Pinky.Forms.ItemCodeBinder = ItemCodeBinder;

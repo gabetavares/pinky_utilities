@@ -67,3 +67,11 @@ export interface FetchPostalCodeBinderFields {
 export interface FetchPostalCodeBinderOptions extends FormBinderOptions {
   fieldNames?: FetchPostalCodeBinderFields
 }
+
+export interface ItemCodeBinderFields {
+  itemCode?: string
+}
+
+export interface ItemCodeBinderOptions extends FormBinderOptions {
+  fieldNames?: ItemCodeBinderFields
+}

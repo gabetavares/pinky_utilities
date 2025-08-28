@@ -58,9 +58,7 @@ app_include_js = [
 doctype_js = {
   "Customer" : "public/js/doctype/Customer.js",
   "Address" : "public/js/doctype/Address.js",
-  "Item" : [
-    "public/js/doctype/Item/format_item_code.js"
-  ],
+  "Item" : "public/js/doctype/Item.js",
 }
 
 # Svg Icons
