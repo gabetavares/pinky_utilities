@@ -1,0 +1,1 @@
+export type GenericFn = (...args: Array<any>) => any;

@@ -33,6 +33,7 @@ app_include_js = [
   "item.pinky.bundle.js",
   "input_mask.pinky.bundle.js",
   "service.pinky.bundle.js",
+  "forms.pinky.bundle.js",
 ]
 
 # include js, css files in header of web template
@@ -55,10 +56,7 @@ app_include_js = [
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
 doctype_js = {
-  "Customer" : [
-    "public/js/doctype/Customer/tax_id_mask.js",
-    "public/js/doctype/Customer/fetch_cnpj.js",
-  ],
+  "Customer" : "public/js/doctype/Customer.js",
   "Address" : [
     "public/js/doctype/Address/phone_mask.js",
     "public/js/doctype/Address/cep_mask.js",
